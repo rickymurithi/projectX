@@ -1,5 +1,6 @@
 class SessionController < ApplicationController
 
+    # signup branch
     def create 
         @user = User.find_by(username: params[:username])
 
