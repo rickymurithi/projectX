@@ -1,4 +1,6 @@
 class ApplicationController < ActionController::Base
+  include ActionController::Cookies
+
 rescue_from ActiveRecord::RecordInvalid, with: :render_unprocessable_entity_response
 
 
