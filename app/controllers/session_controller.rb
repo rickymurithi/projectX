@@ -14,6 +14,7 @@ class SessionController < ApplicationController
             redirect_to login_path, notice: message
         end
     end
+
             
 
 
