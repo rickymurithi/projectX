@@ -1,0 +1,28 @@
+[33m4142192[m[33m ([m[1;36mHEAD -> [m[1;32msignup[m[33m)[m HEAD@{0}: commit: ruby version fix
+[33m80efab1[m[33m ([m[1;31morigin/development[m[33m, [m[1;32mdevelopment[m[33m)[m HEAD@{1}: pull origin development: Fast-forward
+[33m75d98bc[m HEAD@{2}: checkout: moving from development to signup
+[33m80efab1[m[33m ([m[1;31morigin/development[m[33m, [m[1;32mdevelopment[m[33m)[m HEAD@{3}: commit: gemfile ruby version fix
+[33m75d98bc[m HEAD@{4}: checkout: moving from signup to development
+[33m75d98bc[m HEAD@{5}: checkout: moving from development to signup
+[33m75d98bc[m HEAD@{6}: checkout: moving from signup to development
+[33m75d98bc[m HEAD@{7}: rebase finished: returning to refs/heads/signup
+[33m75d98bc[m HEAD@{8}: rebase: checkout development
+[33m1ea0537[m[33m ([m[1;31morigin/signup[m[33m)[m HEAD@{9}: checkout: moving from trial to signup
+[33m75d98bc[m HEAD@{10}: checkout: moving from development to trial
+[33m75d98bc[m HEAD@{11}: checkout: moving from signup to development
+[33m1ea0537[m[33m ([m[1;31morigin/signup[m[33m)[m HEAD@{12}: checkout: moving from development to signup
+[33m75d98bc[m HEAD@{13}: pull origin development: Fast-forward
+[33m96edee7[m HEAD@{14}: checkout: moving from development to development
+[33m96edee7[m HEAD@{15}: checkout: moving from signup to development
+[33m1ea0537[m[33m ([m[1;31morigin/signup[m[33m)[m HEAD@{16}: commit: initial chnages
+[33m3c70b3b[m HEAD@{17}: commit: initial commit
+[33m3367901[m[33m ([m[1;32mmain[m[33m)[m HEAD@{18}: checkout: moving from main to signup
+[33m3367901[m[33m ([m[1;32mmain[m[33m)[m HEAD@{19}: checkout: moving from development to main
+[33m96edee7[m HEAD@{20}: checkout: moving from main to development
+[33m3367901[m[33m ([m[1;32mmain[m[33m)[m HEAD@{21}: checkout: moving from development to main
+[33m96edee7[m HEAD@{22}: checkout: moving from main to development
+[33m3367901[m[33m ([m[1;32mmain[m[33m)[m HEAD@{23}: checkout: moving from development to main
+[33m96edee7[m HEAD@{24}: checkout: moving from 4e3c108d6792744aed1bd73b0147907d51d6dc37 to development
+[33m4e3c108[m HEAD@{25}: commit: all
+[33m96edee7[m HEAD@{26}: pull --rebase origin development: checkout 96edee7779082ad69d533131a33b1a70067c628e
+[33m3367901[m[33m ([m[1;32mmain[m[33m)[m HEAD@{27}: commit (initial): add signup db
