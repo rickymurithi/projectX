@@ -13,8 +13,6 @@
 
 
 ![Screenshot1]()
-![screenshot2]()
-
 
 # Setup and installation instructions
 - Clone the repository to your computer from https://github.com/rickymurithi/kidbiz
