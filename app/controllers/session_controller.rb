@@ -4,14 +4,21 @@ class SessionController < ApplicationController
     def create 
         @user = User.find_by(username: params[:username])
 
-        if !!@user && @user.authenticate(params[:password])
+        if @user&.authenticate(params[:password])
 
-            session[:user_id] = @user.user_id
+            session[:user_id] = @user.id
             render json: @user
-            redirect_to user_path
         else
-            message = "something went wrong! Make sure your username and password are correct"
-            redirect_to login_path, notice: message
+            render json: {error: "username or password invalid"}, status: :unprocessable_entity
+        end
+    end
+
+    def destroy
+        if session[:user_id]
+            reset_session
+            head :no_content
+        else
+            render json: {errors: "not working"}
         end
     end
 

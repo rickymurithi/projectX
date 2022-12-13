@@ -7,13 +7,17 @@ class ProductsController < ApplicationController
 
     def show
         product = find_product
-        render json:product
+        render json: product, serializer: ProductsSerializer
 
     end
 
     def create
         product = Product.create!(product_param)
-        render json:product, status:201
+        if product
+          render json: product, status: :created
+        else
+          render json: {errors: "products not created"}
+        end
     end
 
     def update
@@ -24,7 +28,7 @@ class ProductsController < ApplicationController
         render json: product
       else
         render json: {error: "Product not found"}, status: :not_found
-
+      end
     end
 
     def destroy
@@ -35,11 +39,12 @@ class ProductsController < ApplicationController
 
     private
 
-    def find_products
-        Products.find_by(id: params[:id])
-      end
+    def find_product
+      Product.find_by(id: params[:id])
+    end
 
-      def products_params
-        params.permit(:name, :description, :price)
-      end
+    def product_params
+      params.permit(:name, :description, :price)
+    end
+
 end

@@ -12,14 +12,14 @@ products = Product.create([
     {name: "Toy", description: "Kids-toy", price: 1}
 ])
 
-reviews = Review.create([
-    {product_id: 1, user_id: 2, name: "Ian", description: "Cool"},
-    {product_id: 1, user_id: 2, name: "Ian", description: "Cool"},
-    {product_id: 1, user_id: 2, name: "Ian", description: "Cool"}
+users = User.create([
+    {username: "test", password: "test"}
 
 ])
 
-users = User.create([
-    {username: "test", password: "test"}
+reviews = Review.create([
+    {product_id: 1, user_id: 1, name: "Ian", description: "Cool"},
+    {product_id: 2, user_id: 1, name: "Ian", description: "Cool"},
+    {product_id: 3, user_id: 1, name: "Ian", description: "Cool"}
 
 ])

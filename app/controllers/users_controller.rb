@@ -1,4 +1,3 @@
-class UsersController < ApplicationController
     class UsersController < ApplicationController
         def index
             @user = User.all
@@ -7,14 +6,12 @@ class UsersController < ApplicationController
     
         def create
             @user = User.create!(user_params)
-            render json: @user, status: :created
-            # if @user.save
-            #     session[:user_id] = @user.id
-            #     render json: @user
-            #     # redirect_to root_path
-            # else
-            #     render :index
-            # end
+            if @user
+                session[:user_id] = @user.id
+                render json: @user, status: :created
+            else
+                render json: {error: "invalid username or password"}, status: :unprocessable_entity
+            end
         end
         
         def show
@@ -29,6 +26,4 @@ class UsersController < ApplicationController
         
     
     end
-    
-end
 
